@@ -7,7 +7,7 @@ public class Menu {
 	public static Scanner sc = new Scanner(System.in);
 	public static String menuPrincipal() {
 		
-		System.out.println("Bienvenido");
+		
 		System.out.println("¿Que desea hacer?");
 		System.out.println("1-saber el valor de la UF");
 		System.out.println("2-Valor hora en base a Uf");

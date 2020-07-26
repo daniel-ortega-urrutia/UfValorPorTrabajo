@@ -1,10 +1,10 @@
 package modelo;
 
 public class Serie {
-	
-	 private String fecha;
-     private double valor;
-     
+
+	private String fecha;
+	private double valor;
+
 	public Serie() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -36,7 +36,5 @@ public class Serie {
 	public String toString() {
 		return "Serie \nFecha: " + fecha + "\nValor: " + valor + "\n";
 	}
-     
-     
 
 }

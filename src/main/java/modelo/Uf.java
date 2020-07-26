@@ -112,8 +112,7 @@ public class Uf {
 	public double fijarValorUfHora() {
 		
 		double valorFinal = 0;
-		Uf uf = new Uf();
-		Uf valorUf = uf.obtenerUf();// METODO QUE NOS RETORNA LA UF ACTUAL, SE LO ASIGNAMOS A UNA VARIABLE DE TIPO UF
+		Uf valorUf = this.obtenerUf();// METODO QUE NOS RETORNA LA UF ACTUAL, SE LO ASIGNAMOS A UNA VARIABLE DE TIPO UF
 		System.out.print("Cuantas UF desea cobrar por hora: ");
 		double valorUfHora = sc.nextDouble();// VALOR QUE INGRESAMOS POR CONSOLA
 		valorFinal = valorUf.getSerie().get(0).getValor() * valorUfHora;// OBTENEMOS EL VALOR ACTUAL MULTIPLICADO POR EL
@@ -142,7 +141,6 @@ public class Uf {
 	public double fijarTotalDias() {
 
 		double totalDiasMes = 0;
-		Uf uf = new Uf();
 		System.out.print("Cuantos dias trabajara este mes: ");
 		totalDiasMes = sc.nextDouble();
 		double total = this.fijarValorDia() * totalDiasMes;
@@ -155,8 +153,7 @@ public class Uf {
 //	METODO QUE RETORNA EL VALOR ACTUAL DE LA UF
 	public Uf valorUfActual() {
 		
-		Uf uf= new Uf();
-		Uf ufDia= uf.obtenerUf();
+		Uf ufDia= this.obtenerUf();//con this nos estamos dirigiendo al metodo
 		System.out.printf("El valor de la uf actual es: %.0f",ufDia.getSerie().get(0).getValor());
 		System.out.println(" ");
 		return ufDia;
